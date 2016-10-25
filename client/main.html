@@ -1,0 +1,25 @@
+<head>
+  <title>carpool</title>
+</head>
+
+<body>
+  {{> signup}}
+</body>
+
+<template name="signup">
+  <form class="signupform">
+    <div class="form-group">
+      <label >Full Name
+      <input class="form-control" type="text" name="name" placeholder="Full Name">
+      </label>
+    </div>
+    <div class="form-group">
+      <label for="exampleInputEmail1">Email address
+        <input name="email" type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+      </label>
+    </div>
+    <input class="form-control" type="password" name="password" placeholder="Password">
+    <input class="form-control" type="password" name="confirm" placeholder="Confirm Password">
+    <input class="form-control" type="submit" value="Sign Up">
+  </form>
+</template>
